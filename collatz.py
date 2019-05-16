@@ -26,12 +26,10 @@ steps it will take to reach 1 using the Collatz sequence theory.
 """)
 
 
-run = True
-attempts = 0
+def sequence():
 
-if __name__ == "__main__":
-
-    main_menu()
+    run = True
+    attempts = 0
 
     while True:
 
@@ -65,10 +63,18 @@ if __name__ == "__main__":
             continue
 
         elif user_input == "n" or user_input == "no":
-            print("Thank you for using the app!")
+            clear_screeen()
+            print("Thank you for using the app!\n")
             break
 
         else:
+            clear_screeen()
             print("I don't understand that! If you want to play again, please rerun me. Quiting program...")
-            print("\nThank you for using the app!")
+            print("\nThank you for using the app!\n")
             break
+
+
+if __name__ == "__main__":
+
+    main_menu()
+    sequence()
