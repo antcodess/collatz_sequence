@@ -9,6 +9,7 @@ def clear_screeen():
 
 
 def collatz(number):
+    """ Finds our whether the user's input value is a even or odd number """
     if number % 2 == 0:
         return number // 2
     if number % 2 == 1:
